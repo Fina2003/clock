@@ -1,0 +1,44 @@
+body{
+    background-color: mistyrose;
+}
+
+img{
+    border: 3px solid rosybrown;
+    border-radius: 50%;
+    position: relative;
+    margin: 100px;
+}
+
+#min{
+    position: absolute;
+    background-color: dimgrey;
+    width: 5px;
+    height: 85px;
+    left: 258px;
+    top: 177px;
+    animation: min1 1600s infinite steps(1600);
+    transform-origin: 0 85px;
+}
+
+#sec{
+    position: absolute;
+    background-color: mediumvioletred;
+    width: 3px;
+    height: 110px;
+    left: 259px;
+    top: 152px;
+    animation: sec1 60s infinite steps(1600);
+    transform-origin: 0 110px;
+}
+
+@keyframes min1 {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sec1{
+    100%{
+        transform: rotate(360deg);
+    }
+}
